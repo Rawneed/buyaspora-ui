@@ -6,5 +6,6 @@ export default DS.Model.extend({
   name:     	DS.attr('string'),
   contact: 	DS.belongsTo('contact'),
   locations: 	DS.hasMany('location'),
-  products:  	DS.hasMany('product')
+  offerings:  	DS.hasMany('offerrings'),
+  promotions: 	DS.hasMany('promotions')
 });
