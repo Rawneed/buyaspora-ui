@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  location: 	DS.belongsTo('location'),
+  location: 	DS.hasMany('location'),
   phones: 		DS.hasMany('phone'),
   fax: 			DS.attr('string'),
   email: 		DS.attr('string'),
